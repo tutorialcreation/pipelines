@@ -1,5 +1,7 @@
 import pandas as pd
 import mlflow
+
+# load
 def load_data(filename):
     return pd.read_csv(filename)
 
