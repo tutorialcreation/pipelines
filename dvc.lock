@@ -1,0 +1,15 @@
+schema: '2.0'
+stages:
+  loading:
+    cmd: python increase.py 4
+    deps:
+    - path: data.csv
+      md5: 75633736d9d7490095fa1e8c9588eeba
+      size: 54
+    params:
+      params.yaml:
+        scale: 4
+    outs:
+    - path: increased.csv
+      md5: 1a48faeb11fa7e89ccdc7c8d2f1ca1c7
+      size: 64

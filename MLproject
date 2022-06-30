@@ -1,0 +1,11 @@
+name: incrementer
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      scale: {type: int}
+    command: "python increase.py {scale}"
+
+ 

@@ -1,0 +1,9 @@
+stages:
+  loading:
+    cmd: python increase.py ${scale}
+    deps:
+    - data.csv 
+    params:
+    - scale
+    outs:
+    - increased.csv
